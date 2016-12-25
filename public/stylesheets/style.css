@@ -1,0 +1,181 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.mgr5 {margin-right: 5px;}
+.error {border: 1px solid #d30a00 !important;}
+.pointer {cursor: pointer}
+.image-body {
+    border-radius: 2px;
+    margin: 0 auto;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    position: relative;
+}
+
+.image-body img {
+    margin: auto;
+    display: block;
+}
+
+.change-btn {
+    font-size: 20px;
+    height: 24px;
+    padding: 2px 4px;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+    transition: transform 0.1s ease-out 0s, background 0.2s ease 0s;
+    width: 25px;
+    border-radius: 50%;
+    color : #C5BCB9;
+}
+
+.change-btn {
+  animation: 1.3s ease-out 75ms normal none 1 running sonarEffect;
+}
+.change-btn.glyphicon-triangle-left {
+    padding: 2px 4px 6px 0;
+}
+
+.change-btn:after {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    top: 0;
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.change-btn:hover {
+    background: rgba(0, 0, 0, 0.20) none repeat scroll 0 0;
+    color: #fff;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.tooltip-div {
+    border :1px solid #ccc;
+    border-radius: 2px;
+    width: 70%;
+    display: none;
+    position: absolute;
+}
+.tooltip-div .header {background-color: #e1e1e1;}
+.tooltip-div .header span {
+    padding: 10px 3px;
+}
+.entry-point div{display: inline-block}
+.entry-point div:nth-child(1) {
+    width: 100%;
+}
+
+.marked-text textarea {
+    border:1px solid #e1e1e1;
+    height: 100%;
+    width: 100%;
+}
+
+.option {background-color: #96A94B; vertical-align: top;}
+.icon-effect{display: block;}
+.margin-text {line-height: 30px; font-weight: bold; color: #fff;}
+
+
+.icon-effect::before {
+    font-size: 12px;
+    text-transform: none;
+    vertical-align: top;
+}
+
+.icon-effect:hover::after {
+    opacity: 0.5;
+    transform: scale(0.85);
+}
+.icon-effect::after {
+    box-shadow: 0 0 0 3px #fff;
+    left: 0;
+    padding: 0;
+    top: 0;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+    font-size: 12px;
+}
+.icon-effect::after {
+    border-radius: 50%;
+    box-sizing: content-box;
+    content: "";
+    height: 20px;
+    position: absolute;
+    width: 20px;
+}
+icon-effect:hover {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 1);
+    color: #fff;
+}
+.no-touch a:hover, .no-touch a:active {
+    color: #333;
+}
+.icon-effect{
+    transition: box-shadow 0.2s ease 0s;
+}
+.icon-effect{
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    width: 10px;
+    z-index: 1;
+    top:5px;
+    padding: 4px;
+    float: right;
+    margin-right: 20px;
+    line-height: 0px;
+}
+.mark-points {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    cursor : pointer;
+}
+
+.result-tooltip {
+    background-color: #a1a1a1;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 236px;
+    z-index: 999999;
+}
+.result-tooltip .text {
+    text-align: center;
+    padding: 10px;
+}
+.result-tooltip .time {
+    bottom: 0;
+    float: right;
+    margin-right: 10px;
+}
+.close-icon {
+    background-color: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    padding: 4px;
+    right: -5px;
+    top: -5px;
+}

@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div.container-fluid
+    div.image-body
+      span.change-btn.glyphicon.glyphicon-triangle-right(title="Click to change")
+      img.mark-image.front(src='images/front.png', facing="front", usemap="#map")
+      map(name="map")
+        area(shape="poly", coords="152, 138, 157, 141, 166, 162, 167, 173, 178, 198, 187, 223, 193, 258, 197, 246, 203, 268, 205, 248, 212, 263, 209, 243, 222, 259, 213, 236, 225, 240, 225, 465, 150, 465, 151, 458, 156, 451, 149, 438, 148, 431, 146, 403, 154, 368, 152, 328, 150, 311, 159, 279, 158, 221, 147, 180")
+        area(shape="poly", coords="34, 257, 37, 243, 41, 224, 41, 216, 52, 188, 63, 164, 67, 148, 72, 137, 80, 163, 77, 194, 65, 244, 69, 296, 74, 305, 72, 333, 68, 358, 77, 394, 79, 425, 79, 433, 70, 443, 71, 454, 79, 453, 95, 454, 97, 444, 95, 430, 93, 407, 99, 370, 97, 342, 103, 313, 104, 282, 112, 259, 122, 310, 127, 333, 127, 358, 124, 379, 129, 392, 131, 408, 132, 421, 127, 425, 130, 435, 128, 445, 134, 458, 148, 458, 147, 464, 2, 465, 1, 240, 12, 235, 2, 253, 4, 258, 17, 248, 11, 263, 22, 252, 22, 268, 30, 249")
+        area(shape="poly", coords="2, 240, 7, 230, 20, 222, 29, 196, 35, 164, 46, 145, 53, 125, 52, 95, 59, 80, 73, 76, 92, 73, 102, 60, 97, 49, 92, 39, 96, 30, 97, 19, 106, 6, 121, 9, 132, 19, 130, 32, 135, 35, 133, 41, 131, 47, 127, 63, 136, 75, 151, 79, 167, 83, 174, 101, 177, 125, 179, 147, 189, 163, 195, 186, 202, 216, 207, 223, 223, 233, 227, 230, 227, 2, 2, 5")
+        
+      div.pts-render
+      
+      div.result-tooltip
+        spanc.close-icon.glyphicon.glyphicon-remove
+        div.text
+        div.time
+          span.mgr5
+          i.pointer.glyphicon.glyphicon-trash.remove-text
+      
+
+      div.tooltip-div
+       div.header
+         span.margin-text Enter some text
+         span.close-image.icon-effect.glyphicon.glyphicon-remove
+         span.save-point.icon-effect.glyphicon.glyphicon-ok
+     
+       div.entry-point
+       div.marked-text
+         textarea.mark-text(autocomplete="off")
