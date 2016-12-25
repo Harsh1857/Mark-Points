@@ -1,3 +1,7 @@
-# mark_points
+**Mark Points**
 This project can be used to mark the points and the description on the image
-# Installation
+
+**Installation**
+
+* Clone the project
+* npm install
